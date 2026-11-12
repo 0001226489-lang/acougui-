@@ -1,0 +1,51 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Açougue - Gestão de Funcionários</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container container-wide">
+    <header class="page-header">
+      <div>
+        <h2>🥩 Gestão de Funcionários</h2>
+        <p class="subtitle">Açougue & Casa de Carnes</p>
+      </div>
+      <div class="header-actions">
+        <a href="cadastro.html" class="btn btn-primary">+ Novo Funcionário</a>
+        <button id="btnLimparTudo" class="btn btn-danger-outline">Limpar Tudo</button>
+      </div>
+    </header>
+
+    <!-- Barra de Pesquisa -->
+    <div class="search-bar">
+      <input type="text" id="inputBusca" placeholder="🔍 Buscar por nome, cargo ou especialidade...">
+    </div>
+
+    <div class="table-responsive">
+      <table>
+        <thead>
+          <tr>
+            <th>Nome</th>
+            <th>Cargo</th>
+            <th>Especialidade</th>
+            <th>Turno</th>
+            <th>Salário</th>
+            <th>Cidade/UF</th>
+            <th style="text-align: center;">Ações</th>
+          </tr>
+        </thead>
+        <tbody id="listaFuncionarios">
+          <!-- Conteúdo inserido via JS -->
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
